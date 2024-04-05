@@ -31,7 +31,7 @@
 Voor de onderzoeksvraag te beantwoorden is het belangrijk om de requirements te analyseren. De opgestelde requirements zullen de basis vormen voor 
 de evaluatie, de vergelijkende analyse en de proof of concept. Deze vereisten zullen aan de hand van verschillende bronnen worden opgesteld. Als eerste zal 
 er in de voorgaande literatuurstudie worden gezocht naar de belangrijkste vereisten. Vervolgens zal er een vraag worden gesteld die zal worden 
-beantwoord door mijn co-promotor en een collega die al twee jaar ervaring heeft met een Low-Code platform, genaamd FlutterFlow. De vraag bestaat uit, namelijk welke vereisten zijn volgens u belangrijk bij het kiezen van een Low-Code platform en rangshik deze vereisten van belangrijk naar minder belangrijk. Op deze
+beantwoord door mijn co-promotor. De vraag bestaat uit, namelijk welke vereisten zijn volgens u belangrijk bij het kiezen van een Low-Code platform en rangshik deze vereisten van belangrijk naar minder belangrijk. Op deze
 manier kan er een duidelijke beeld worden gevormd van waar er rekening mee moet worden gehouden bij het evalueren van de Low-Code en/of No-Code platformen.
 \\
 \\
@@ -82,13 +82,41 @@ Ter info, de criteria's die in de tabel zullen worden opgenomen staan niet vast 
     \\\endline
 \end{longtable}
 Bij het antwoord van de copromoter kwam er ook andere criteria's naar boven. Deze bestaan uit de volgende criteria's;
-Snelheid van het platform, gebruiksvriendelijkheid, integratie met AirTable, limieten van het platform,  veiligheid, functionaliteiten binnen het platform en de kostprijs.
-Vervolgens gaf mijn collega dat twee jaar ervaring heeft met deze platformen de volgende criteria's; N.T.B. (Nog te bepalen) + rangshikking van belangrijk naar minder belangrijk.
-%%TODO
+gebruiksvriendelijkheid, integratie met AirTable, en integratie met MAKE.com . Vervolgens heb ik samen met mijn copromoter overlegd welke criteria's de belangrijkste zijn en welke minder belangrijk zijn.
+Hieruit volgt een lijst van requirements met een score op 10, waarbij 10 het belangrijkste is en 1 het minst belangrijk.
+
+\begin{table}[H]
+    \centering
+    \caption{Requirements score}
+    \begin{tabular}{llc}
+    \toprule
+    Criteria & Score \\
+    \midrule
+    Snelheid van het platform & 10 \\
+    Herstelbeheer & 10 \\
+    Veiligheid & 9 \\
+    Snelheid van applicatieontwikkeling & 8 \\
+    Integratie mogelijkheden & 8 \\
+    Platformflexibiliteit (bv. high-code kunnen implementeren) & 8 \\
+    Schaalbaarheid & 8 \\
+    Gebruiksvriendelijkheid & 8 \\
+    Integratie met AirTable en/of MAKE.com & 8 \\
+    Kostprijs & 7.5 \\
+    Updatebeleid & 7.5 \\
+    Klantentevredenheid & 7.5 \\
+    Test- en debugmogelijkheden & 7.5 \\
+    Leercurve & 6 \\
+    Documentatiekwaliteit & 6 \\
+   
+    \bottomrule
+ \end{tabular}
+\end{table}
+
 \subsubsection*{Officiële requirements}
-De officiële requirements zullen worden opgesteld aan de hand van de voorgaande literatuurstudie, de antwoorden van de copromoter en de collega.
-Hiervoor zal er hier onder een tabel aanwezig met de requirements die zeker belangrijk zijn bij het evalueren van de Low-Code en/of No-Code platformen.
-%%TODO 
+De officiële requirements bevat de criteria's die een score hebben van 8 of hoger, met uitzondering van kostprijs en updatebeleid. De reden hiervoor is omdat de kostprijs toch wel belangrijk
+is voor een start-up en het updatebeleid is belangrijk voor de lange termijn. Hieruit volgt dat de klantentevredenheid, test- en debugmogelijkheden, documentatiekwaliteit en leercurve niet in de officiële requirements zullen worden opgenomen.
+Een mogelijke reden waarom leercurve en documentatiekwaliteit niet belangrijk is omdat er hedendaags veel bronnen zijn die kunnen helpen bij het leren van een platform en de documentatiekwaliteit is vaak goed bij de meeste platformen, zo niet dan zijn er 
+toturials die meestal kunnen helpen bij een bepaalde probleem.
 
 
 %% TODO: In dit hoofstuk geef je een korte toelichting over hoe je te werk bent
@@ -107,7 +135,38 @@ selectie van een alternatief die verder zal worden geanalyseerd.
 \subsection*{Alternatieve platformen}
 \label{subsec:alternatieve-platformen}
 
-\subsubsection*{Mendix}
+\subsubsection*{Zoho Creator}
+Zoho Creator is een Low-Code platform, wat ook een gemakkelijke platform is om te gebruiken, dat werknemers van bedrijven maar ook mensen zonder programmeerervaring toelaat
+om eenvoudig krachtige bedrijf applicaties te ontwikkelen \autocite{Computer2022}. Dit platform is gemaakt door Zoho Corporation. \textcite{ZohoCorporation2024a} gelooft er in dat software de ultieme tool is voor zowel de handen als de hersenen.
+Zoho Corporation is een bedrijf dat vooral focust op het verder ontwikkelen van hun product, zoals Zoho Creator, en hun klanten support \autocite{ZohoCorporation2024a}. Dit toont aan dat Zoho Corporation
+hun updatebeleid volgens hun website goed is. Volgens \textcite{ZohoCorporation2024a} biedt het bedrijf meer dan alleen een product, maar zoals het bedrijf het noemt 'the operating system for business' \autocite{ZohoCorporation2024a}.
+Dit bevat maar liefst 55 integreerde applicaties voor zowel mobile als web voor elke bedrijfsnood \autocite{ZohoCorporation2024a}.
+\\
+\\
+\textbf{Functies van Zoho Creator}
+In 2022 was er nog geen enkele Low-Code platform die toeliet om business gebruikers en IT een end to end business oplossingen te maken \autocite{Computer2022}.
+De Zoho Creator platform zorgt ervoor dat je applicatie development, business intelligence en analytics, integraties, en automatiseringen kan doen in één platform, wat men ook een end to end business oplossing noemen \autocite{Computer2022}.
+Dit geeft verschillende voordelen voor het bedrijf dat dit platform gebruikt zoals het verhogen van veiligheid maar ook omdat het platform een end to end business oplossing is, is het ook mogelijk om uniforme oplossingen te maken via de low-code platform,
+waardoor elke werknemer de mogelijkheid krijgt om te innoveren \autocite{Computer2022}. Volgens \textcite{Computer2022} zorgt Zoho Creator er ook voor dat de business gebruikers snel een schaalbare low-code oplossingen kunnen maken zoals het maken van een app of automatisering.
+Het ontwikkelen van een low-code oplossing is zelfs 10 keer sneller dan eender welke andere oplossing op de markt \autocite{Computer2022}. Het platform heeft ook hun eigen AI, genaamd Zia, die de gebruiker helpt bij het maken van applicaties \autocite{Computer2022}. Deze AI
+kan ontwikkelaars helpen bij het importeren van data door deze te analyseren en te structureren \autocite{Computer2022}. Daarnaast kan het ook relaties tussen data detecteren \autocite{Computer2022}. 
+Zoho Creator heeft de mogelijkheid om zelf code te schrijven, wat een groot voordeel is voor bedrijven die toch nog high-code willen implementeren \autocite{Computer2022}. 
+De code kan geschreven worden in Deluge, Java of Node.js en zijn ook herbruikbaar om duplicatie te voorkomen \autocite{Computer2022}.
+De gebruikers van het platform Zoho Creator kunnen ook zien hoe goed integraties aan het werken zijn aan de hand van de 'Integration Status Dashboard', wat helpt om te anlayseren waar er problemen zijn \autocite{Computer2022}.
+\\ %TODO (nu enkel info van Express Computer, moet nog andere bronnen zoeken)
+\\
+\textbf{Kostprijs}
+%per abonnement; herstelbeheer, integratie, automatiseringen (ai)
+Zoho Corporation heeft verschillende soorten abonnementen voor hun platform, deze zijn Standard, Professional, Enteprise, en Flex \autocite{ZohoCorporation2024}.
+De standaard abonnementen bedraagt 12 euro, per gebruiker, per maand. Hiermee kan je maar maximaal 1 business applicatie maken \autocite{ZohoCorporation2024}.
+Daarbij wordt ook je data opgeslagen en geback-upt in de cloud en 20 AI models maken om te trainen voor specifieke taken \autocite{ZohoCorporation2024}. Op vlak van integratie
+kan je maar maximum 5 data bronnen integreren en 5 eigen connectie maken met systemen dat niet ondersteund worden door Zoho Creator \autocite{ZohoCorporation2024}. Vervolgens heb je dan het
+abonnement Professional, wat 30 euro per gebruiker, per maand bedraagt. Hiermee kan je unlimited business applicaties maken en 100 AI models trainen \autocite{ZohoCorporation2024}. 
+Daarbij kan je 15 data bronnen integreren en 10 eigen connecties maken \autocite{ZohoCorporation2024}. Daarnaast heb je dan Enteprise abonnement, wat 37 euro per gebruiker, per maand bedraagt.
+Het voordeel van dit abonnement is dat je integratie mogelijkheid hebt met 650+ business apps, 30 data bronnen integreren, en 20 eigen connecties maken \autocite{ZohoCorporation2024}. Vervolgens heb je ook
+Business Intelligence and Analytics bij Enteprise om zeer eenvoudig en verschillende anlaysis te maken \autocite{ZohoCorporation2024}. Het handige is dat je ook de mogelijkheid hebt om hun te contacteren in het geval 
+van gepersonaliseerde requirements via het Flex abonnement \autocite{ZohoCorporation2024}.
+
 \subsubsection*{OutSystems}
 \subsubsection*{Microsoft PowerApps}
 \subsubsection*{Appian}
@@ -117,6 +176,9 @@ selectie van een alternatief die verder zal worden geanalyseerd.
 
 \section*{Vergelijkende analyse}
 \label{sec:vergelijkende-analyse}
+In deze fase vergelijken we de alternatieve platform met Softr en Stacker aan de hand van verschillende testen. 
+Deze soort testen hangen af van de requirements analyse.
+
 
 \section*{Proof of Concept}
 \label{sec:proof-of-concept}
