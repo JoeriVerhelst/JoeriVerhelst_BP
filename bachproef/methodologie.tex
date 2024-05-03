@@ -433,7 +433,7 @@ Het Team abonnement kost ongeveer 327 euro per maand (\$ 349) en is goed voor sc
 het Enterprise abonnement, waarvan de prijs niet bekend is, en is bedoelt voor bedrijven met specifieke requirements \autocite{Bubble2024}.
 
 \subsubsection*{Samenvatting}
-\begin{longtable}{p{2.2cm} p{4.4cm} p{3.4cm} p{2.2cm} c c c}
+\begin{longtable}{p{2.2cm} p{2.4cm} p{2.4cm} p{2.2cm} c c c}
     \caption{Samenvatting van alternatieven} \label{samenvatting-alternatieven} \\
     \toprule
     \textbf{Platform} & \textbf{Voordelen} & \textbf{Nadelen} & \textbf{Integraties} & \textbf{AirTable} & \textbf{MAKE.com} & \textbf{Prijs} \\
@@ -701,23 +701,23 @@ Dit brengt Bubble.io tot een superieur bij het updatebeleid.
 
 \section*{Proof of Concept}
 \label{sec:proof-of-concept}
-Om de gebruiksvriendelijkheid en andere criteria's zoals platformflexibiliteit, en snelheid van het platform te testen, is er een Proof of Concept uitgevoerd. 
+Om de gebruiksvriendelijkheid en andere criteria's zoals platformflexibiliteit en snelheid van het platform te testen, is er een Proof of Concept uitgevoerd. 
 \\
 \\
 Een deel van de Proof-Of-Concept is uitgevoerd door 2 niet-programmeurs, die geen IT achtergrond hebben. Hieruit volgt dat de testpersonen
 een kleine applicatie moeten maken met de drie platformen. De applicatie is een eenvoudige task app waarbij je taken kan toevoegen en verwijderen.
-De applicatie zal dus bestaan uit een home schem waar je alle taken ziet en een scherm om een nieuwe taak toe te voegen. De niet-programmeurs mogen ook hulp vragen via het internet.
-Hieronder bevindt zich ook een ontwerp van de applicatie, als leidraad. Ze zullen de applicatie drie keer maken in de drie platformen, maar zullen de platformen in een andere volgorde gebruiken.
+De applicatie zal dus bestaan uit een home scherm waar je alle taken ziet en een scherm om een nieuwe taak toe te voegen. De niet-programmeurs mogen ook hulp vragen via het internet.
+Hieronder bevindt zich ook een ontwerp van de applicatie als leidraad. Ze zullen de applicatie drie keer maken in de drie platformen, maar zullen een andere volgorde gebruiken.
 \\
 \includegraphics[scale=0.4]{todo_app_poc.png}
 \\
 Bron - Joeri Verhelst 
 \\
 \\
-Daarbij zal ook een programmeur een andere app maken, genaamd een feedback app, die bestaat uit een formulier voor feedback dat data opslaat in AirTable.
+Daarbij zal een programmeur een andere app maken, genaamd een feedback app, die bestaat uit een formulier voor feedback dat data opslaat in AirTable.
 Vervolgens zal ook via MAKE.com een e-mail gestuurd worden naar de gebruiker die feedback heeft gegeven.
-Dit zorgt ervoor dat men de integratie met zowel AirTable als MAKE.com kan testen. Daarnaast zal de applicatie ook een lijst zien van alle feedback dat gegeven is.
-Hieronder bevindt zich ook een ontwerp van de applicatie, als leidraad.
+Dit zorgt ervoor dat men de integratie met zowel AirTable als MAKE.com kan testen. Daarnaast zal de applicatie ook een lijst bevatten van alle feedback.
+Hieronder bevindt zich ook een ontwerp van de applicatie als leidraad.
 \\
 \includegraphics[scale=0.4]{feedback_app_poc.png}
 \\
@@ -725,14 +725,71 @@ Bron - Joeri Verhelst
 \\
 \\
 Het is \textbf{belangrijk} om te vermelden dat, door de kleine steekproef, de uitgevoerde Proof of Concept niet voldoende is om een 
-definitieve beslissing te nemen over welke platform het beste is voor Quivvy Solutions.
+definitieve beslissing te nemen over welk platform het beste is voor Quivvy Solutions.
 
 \subsection*{Benodigdheden}
 Omdat alle platformen cloud-based zijn, is er een laptop en een internetverbinding nodig om de Proof of Concept uit te voeren. Vervolgens heb je ook 
-een account nodig op de drie platformen; Softr, Stacker en Bubble. Deze drie platformen bieden dan ook een gratis versie aan, waardoor er geen kosten aan verbonden zijn. Vervolgens zal je ook 
-nog een account nodig hebben op AirTable en MAKE.com, die ook een gratis versie aanbieden.
+een account nodig op de drie platformen; Softr, Stacker en Bubble. Deze drie platformen bieden dan ook een gratis versie aan waardoor er geen kosten aan verbonden zijn. Vervolgens zal je ook 
+nog een account nodig hebben op AirTable en MAKE.com die ook een gratis versie aanbieden.
 
 \subsection*{Uitvoer van de Proof of Concept}
+\subsubsection*{Niet-programmeurs}
+
+\subsubsection*{Programmeur}
+Voor de drie platformen te laten testen door een programmeur zal natuurlijk niet alle 3 de platformen tegelijkertijd 
+kunnen getest worden, daarom zal de programmeur eerst beginnen met Softr. 
+Zoals eerder vermeld zal de programmeur een feedback app moeten maken.
+\\
+\\
+Hiervoor moet hij eerst een account maken op Softr en op AirTable om de app te kunnen maken. 
+Daarna kom je terecht op een overzichtelijke dashboard waar je de keuze hebt om templates te kiezen maar 
+ook je eigen app te maken van nul of met AI. Bij het ontwikkelen van de app ervaarden de programmeur één probleem. 
+Dit probleem was een error dat hij kreeg bij het snel verwijderen van componenten waardoor de pagina zich herstartte. 
+Vervolgens merkte hij op dat de app kan hersteld worden aan de hand van de App History waarbij je terug kunt gaan 
+naar een bepaalde snapshot. De programmeur heeft dan uiteindelijk de feedback app 
+kunnen maken in exact 41 minuten en 54 seconden, de besteden tijd in AirTable is niet inbegrepen. 
+Dit was zonder het gebruik van de AI, die Softr aanbiedt om je pagina’s voor u te maken. Vervolgens vond 
+de programmeur de aantal integraties dat hij zag redelijk gelimiteerd maar de integratie met Airtable was 
+zeer goed en simpel. Je kon wel helaas geen twee tabellen van de database connecteren op 1 formulier. 
+Ook zag het er zeer eenvoudig uit om MAKE.com te gebruiken, maar doordat je in Softr geen 2 verschillende connecties 
+kan leggen op één knop heeft de programmeur enkel AirTable gebruikt.
+\\
+\\
+Hieronder zie je de AirTable database dat de programmeur heeft gemaakt en hoe het gebruikmaken van AirTable in Softr plaatsnam.
+\\
+\\
+\includegraphics[scale=0.5]{softr/database-airtable-softr.png}
+\\
+\\
+\includegraphics[scale=0.5]{softr/airtable-connectie.png}
+\includegraphics[scale=0.5]{softr/connectie-leggen-aan-airtable-velden.png}
+\\
+\\
+Op vlak van platformflexibiliteit vond de programmeur het zeer matig. 
+Want je kan namelijk geen meerdere acties plaatsen op een knop. 
+Daarbij is het layout aanpassen van een componenten ook zeer beperkt zoals een component een border radius of shaduw geven is niet mogelijk. 
+Wat de programmeur wel zeer tof vond is dat je de optie hebt om eigen custom componenten te maken via high-code en ook templates kon gebruiken.
+\\
+\\
+Softr scoorde wel heel goed op gebruiksvriendelijkheid volgens de programmeur. 
+Hij vond het zeer overzichtelijk en kon er snel mee omgaan. 
+Juist was het niet mogelijk om individuele delen van een component aan te duiden om snel aan te passen. 
+Alle wijzingen moeten namelijk gebeuren in het rechterpaneel waardoor je telkens moest zoeken naar het deel dat je wou aanpassen. 
+Ook was je verplicht om een één template aan te duiden als startpagina bij het kiezen om een app te maken van nul, wat zeer apart was. 
+\\
+\\
+\includegraphics[scale=0.5]{softr/rechter-paneel.png}
+\paragraph*{Eindresultaat}
+Hieronder kunt u het eindresultaat zien van de feedback app dat gemaakt is in Softr. Door de beperkte platformflexibiliteit kon men namelijk het voorbeeld niet volledig namaken. 
+Vervolgens is er ook gebruik gemaakt van een eigen component voor de titel en ondertitel. Dit component werd geschreven in HTML5 met Bootstrap.
+\\
+\\
+\includegraphics[scale=0.75]{softr/feedbacklijst-softr.png}
+\includegraphics[scale=0.75]{softr/formulier-gemaakt-softr.png}
+\paragraph*{Score}
+De programmeur geeft deze app een score van 3,5 op 5 doordat je echt kon opmerken dat het platform wel gelimiteerd is. 
+Hierdoor kon de programmeur achterhalen dat het maken complexe apps een echte uitdaging zou zijn met Softr, 
+door de beperkte platformflexibiliteit.
 \subsection*{Resultaten van de Proof of Concept}
 
 \section*{Conclusie}
