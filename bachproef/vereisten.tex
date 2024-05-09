@@ -1,0 +1,92 @@
+\chapter{\IfLanguageName{dutch}{Vereisten}{Requirements}}%
+\label{ch:vereisten}
+\section{Vereisten uit literatuurstudie}%
+\label{sec:vereisten-literatuurstudie}
+In de literatuurstudie kwamen er enkele criteriums naar boven die invloed kunnen hebben op 
+de keuze van een Low-Code en/of No-Code platform. Voor een duidelijke overzicht zal hieronder een tabel opgesteld zijn met de volgende velden; 
+Criteria, Reden/Relevantie, Bron. Ter info; de criteriums die in de tabel zijn opgenomen 
+staan niet vast en zijn bedoeld als een leidraad voor de requirements analyse.
+\begin{longtable}{lp{4.4cm}p{3.4cm}}
+    \caption{Criteria lijst a.d.h.v. voorgaande literatuurstudie} \label{criteriums} \\
+    \toprule
+    \textbf{Criteria} & \textbf{Reden/Relevantie} & \textbf{Bron} \\
+    \midrule
+    \endfirsthead
+
+    % Repeat the headers on the next page
+    \multicolumn{3}{c}{{\bfseries \tablename\ \thetable{} -- vervolg van de vorige pagina}} \\
+    \toprule
+    \textbf{Criteria} & \textbf{Reden/Relevantie} & \textbf{Bron} \\
+    \midrule
+    \endhead
+
+    % Footer at the end of each page, except the last page
+    \midrule
+    \multicolumn{3}{r}{{Vervolg op volgende pagina}} \\
+    \endfoot
+
+    % Footer at the end of the table
+    \bottomrule
+    \endlastfoot
+
+    % Table content
+    Snelheid van het platform & Om snel en eenvoudig ingewikkelde applicaties te ontwikkelen. &  \hyperref[subsec:snelheid]{Voordelen: snelheid} \\
+    Snelheid van applicatieontwikkeling & Zorgt dat er meerdere applicaties in een korte tijd ontwikkeld kunnen worden. Vervolgens moeten bedrijven ook steeds snel en flexibel kunnen inspelen op de veranderende markt. &  \hyperref[subsec:snelheid]{Voordelen: snelheid} \& \hyperref[sec:reden-tot-gebruik]{Reden tot gebruik: Tijdrovend} \\
+    Leercurve & Heel wat mensen laten zich afschrikken om te programmeren, door de complexiteit van de programmeertalen. Hierdoor is het belangrijk dat het snel en eenvoudig is om te leren. & \hyperref[sec:reden-tot-gebruik]{Reden tot gebruik: Beperkt aantal programmeurs} \\
+    Updatebeleid \& Moderniteit & Omdat technologie vaak verandert, is de impact van een updatebeleid en moderniteit van het platform belangrijk op lange termijn. & \hyperref[sec:reden-tot-gebruik]{Reden tot gebruik: Technologische turbulentie} \\
+    Kostprijs & Omdat Quivvy Solutions BV een start-up is, zijn er beperkte financiële middelen. Daardoor is het belangrijk dat de kostprijs niet over het budget gaat. & \hyperref[sec:reden-tot-gebruik]{Reden tot gebruik: Hoge kosten} \& \hyperref[sec:lcnc-bedrijven]{LCNC binnen bedrijven} \\
+    Klantentevredenheid & Als klein bedrijf is het belangrijk dat de klanten tevreden zijn over de applicaties die worden ontwikkeld. &  \hyperref[sec:reden-tot-gebruik]{Reden tot gebruik: Klantentevredenheid} \\
+    Veiligheid & Om ervoor te zorgen dat zowel het bedrijf Quivvy Solutions BV als hun eindklant zo weinig mogelijk schade kan ondervinden door het gebruikte platform. &  \hyperref[subsec:veiligheid]{Voordelen: Veiligheid} \\
+    Herstelbeheer \& Back-up & Wanneer er zich een ramp afspeelt moeten de gegevens zo snel mogelijk kunnen hersteld worden. Hierdoor is regelmatig back-ups relevant. & \hyperref[subsec:cloud-based-lcnc]{Cloud-based LCNC : Dataherstel} \\
+    Integratie mogelijkheden & Hoe meer Integratie mogelijkheden dat het LCNC platform heeft, hoe beter. & \hyperref[subsec:beperkte-flexibiliteit]{Nadelen: Beperkte Flexibiliteit} \\
+    Platformflexibiliteit \& Aanpasbaarheid & Mogelijkheid om high-code en de mogelijke functionaliteiten te implementeren wanneer nodig. & \hyperref[subsec:beperkte-flexibiliteit]{Nadelen: Beperkte Flexibiliteit} \\
+    Schaalbaarheid & Een applicatie in LCNC platformen zou gemakkelijk uitbreidbaar moeten zijn en de mogelijkheid moeten hebben om meer gelijktijdig gebruikers toe te laten. & \hyperref[subsec:gelimiteerde-schaalbaarheid]{Nadelen: Gelimiteerde schaalbaarheid} \\
+    Documentatiekwaliteit &  Documentatie kan leiden tot een oplossing voor het beter verstaan van bijvoorbeeld het opslaan van data. & \hyperref[subsec:lcnc-binnen-agile]{LCNC in Software Development Life Cycle: Application Design} \\
+    Test- en debugmogelijkheden  & LCNC platformen verwaarlozen vaak testen, maar dit blijft nogsteeds een belangrijke fase in de Software Development Life Cycle.  &  \hyperref[subsec:lcnc-binnen-agile]{LCNC in Software Development Life Cycle: Testing}\\
+    \\\endline
+\end{longtable}
+\section{Bepaling van belangrijke vereisten}%
+\label{sec:bepaling-van-belangrijke-vereisten}
+Bij het antwoord van de copromotor kwam er ook andere criteriums naar boven. 
+Deze bestaan uit; gebruiksvriendelijkheid, integratie met AirTable, 
+en integratie met MAKE.com. Vervolgens heb ik samen met mijn copromotor overlegt welke
+ criteriums de belangrijkste zijn en welke minder belangrijk zijn. Hieruit volgt een lijst van 
+ requirements met een score op 10, waarbij 10 het belangrijkste is en 1 het minst belangrijk.
+
+\begin{table}[H]
+    \centering
+    \caption{Requirements score}
+    \begin{tabular}{llc}
+    \toprule
+    Criteria & Score \\
+    \midrule
+    Snelheid van het platform & 10 \\
+    Herstelbeheer & 10 \\
+    Veiligheid & 9 \\
+    Snelheid van applicatieontwikkeling & 8 \\
+    Integratie mogelijkheden & 8 \\
+    Platformflexibiliteit (bv. high-code kunnen implementeren) & 8 \\
+    Schaalbaarheid & 8 \\
+    Gebruiksvriendelijkheid & 8 \\
+    Integratie met AirTable en/of MAKE.com & 8 \\
+    Kostprijs & 7.5 \\
+    Updatebeleid & 7.5 \\
+    Klantentevredenheid & 7.5 \\
+    Test- en debugmogelijkheden & 7.5 \\
+    Leercurve & 6 \\
+    Documentatiekwaliteit & 6 \\
+   
+    \bottomrule
+ \end{tabular}
+\end{table}
+
+\section{Officiële Vereisten}%
+\label{sec:officiële-vereisten}
+De officiële requirements bevatten de criteriums die een score hebben van 8 of hoger, 
+met uitzondering van kostprijs en updatebeleid. De oorzaak hiervoor is dat de 
+kostprijs toch wel belangrijk is voor een start-up en het updatebeleid voor 
+de lange termijn. Hieruit volgt dat de klantentevredenheid, test- en debug mogelijkheden, 
+documentatiekwaliteit en leercurve niet in de officiële requirements zullen opgenomen worden. 
+Een reden waarom leercurve en documentatiekwaliteit niet belangrijk is, is omdat er hedendaags bronnen 
+zijn die kunnen helpen bij het leren van een platform, daarbij beschikt een platform vaak over goede documentatiekwaliteit. Zo niet, 
+dan zijn er tutorials die kunnen helpen bij een bepaalt probleem.
